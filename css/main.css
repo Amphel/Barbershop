@@ -1,22 +1,22 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "PT Sans Narrow", Arial, sans-serif;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 700;
-    color: #ffffff;
-    text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
 
-    background-color: #000000;
-    background-image: url("../img/background.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-color: #000000;
+  background-image: url("../img/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .container {
@@ -26,7 +26,7 @@ a {
 
 .container-main {
   padding-top: 60px;
-  padding-bottom: 49px;
+  padding-bottom: 50px;
 }
 
 .visually-hidden {
@@ -48,6 +48,7 @@ a {
 
 .inner-page {
   color: #000000;
+
   background-color: #f8f5f2;
   background-image: url(../img/index/pattern-light.jpg);
   background-position: 0 0;
@@ -56,15 +57,15 @@ a {
 
 .button {
   display: inline-block;
-  font: inherit;
-  line-height: 43px;
   width: 140px;
   height: 43px;
+  font: inherit;
+  line-height: 43px;
   text-align: center;
-  color: #ffffff;
   vertical-align: middle;
   text-transform: uppercase;
   text-decoration: none;
+  color: #ffffff;
   background-color: #000000;
   border: none;
   box-sizing: border-box;
@@ -86,11 +87,9 @@ a {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  /* padding: 27px 0px; */
 }
 
 .main-header-logo {
-  position: relative;
   position: absolute;
   left: 50%;
   margin-top: 100px;
@@ -122,7 +121,6 @@ a {
 .site-navigation {
   float: left;
   padding: 0;
-  padding-left: 154px;
   margin: 0;
 }
 
@@ -133,6 +131,10 @@ a {
 
 .site-navigation li {
   display: inline-block;
+}
+
+.inner-page-navigation {
+  padding-left: 155px;
 }
 
 .user-navigation {
@@ -162,14 +164,16 @@ a {
 
 .site-navigation,
 .user-navigation {
-    list-style: none;
+  list-style: none;
 }
 
 .site-navigation a,
 .user-navigation a {
-    color: #ffffff;
-    padding: 27px 17px 27px 17px;
-    display: block;
+  display: block;
+  padding: 27px 17px 27px 17px;
+  color: #ffffff;
+    
+    
 }
 
 .site-navigation a:hover,
@@ -178,7 +182,7 @@ a {
 .user-navigation a:focus,
 .navigation a:hover,
 .navigation a:focus {
-    background-color: #242424;
+  background-color: #242424;
 }
 
 .features {
@@ -187,25 +191,25 @@ a {
 }
 
 .features-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .feature-item {
   position: relative;
   width: 310px;
-  text-align: center;
   padding-left: 15px;
   padding-right: 15px;
+  text-align: center;
   box-sizing: content-box;
 }
 
 .feature-item h3 {
-    font-size: 30px;
-    line-height: 42px;
-    padding-bottom: 65px;
+  font-size: 30px;
+  line-height: 42px;
+  padding-bottom: 65px;
 }
 
 .feature-item h3,
@@ -247,8 +251,8 @@ a {
 }
 
 .index-columns::after {
-  content: "";
   position: absolute;
+  content: "";
   top: 50%;
   right: 50%;
   width: 8px;
@@ -271,16 +275,16 @@ a {
 .gallery h2,
 .contacts h2,
 .appointment h2 {
-    font-size: 30px;
-    line-height: 42px;
-    margin: 0;
-    padding-bottom: 35px;
+  margin: 0;
+  font-size: 30px;
+  line-height: 42px;
+  padding-bottom: 35px;
 }
 
 .news-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .news-item,
@@ -295,7 +299,7 @@ a {
 }
 
 .news-item time {
-    text-transform: none;
+  text-transform: none;
 }
 
 .right-part {
@@ -337,8 +341,8 @@ a {
 
 .appointment-item {
   width: 140px;
-  box-sizing: border-box;
   padding-bottom: 15px;
+  box-sizing: border-box;
 }
 
 .appointment-item-left {
@@ -355,15 +359,16 @@ a {
 }
 
 .appointment-item input {
-    font: inherit;
-    width: 140px;
-    background-color: transparent;
-    border: 2px solid #000000;
-    margin-top: 10px;
-    padding-left: 15px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    box-sizing: border-box;
+  width: 140px;
+  margin-top: 10px;
+  padding-left: 15px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-size: 14px;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+
+  background-color: transparent;
 }
 
 .appointment-form .button {
@@ -372,13 +377,14 @@ a {
 }
 
 .appointment-item input:focus {
-    border-color: #663d15;
+  border-color: #663d15;
 }
 
 .main-footer {
   padding-top: 60px;
   padding-bottom: 40px;
   color: #ffffff;
+
   background-color: #232323;
   background-image: url(../img/index/pattern-dark.jpg);
   background-position: 0 0;
@@ -395,19 +401,19 @@ a {
 
 .footer-contacts {
   display: inline-block;
+  float: left;
   width: 310px;
   margin: 0;
-  float: left;
 }
 
 .footer-contacts a {
-    color: #ffffff;
-    text-decoration: underline;
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .footer-contacts a:hover,
 .footer-contacts a:focus {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .footer-social {
@@ -426,11 +432,11 @@ a {
 }
 
 .footer-social ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .footer-social li {
@@ -443,10 +449,10 @@ a {
 
 .social-button {
   display: inline-block;
-  color: #ffffff;
-  font-size: 0;
   width: 43px;
   height: 43px;;
+  font-size: 0;
+  color: #ffffff;
   background-repeat: no-repeat;
   background-color: #000000;
   background-position: center center;
@@ -473,7 +479,6 @@ a {
 
 .footer-copyright {
   float: right;
-    /* text-align: center; */
 }
 
 .footer-copyright b {
@@ -483,47 +488,52 @@ a {
 
 .footer-copyright .button:hover,
 .footer-copyright .button:focus {
-    color: #000000;
+  color: #000000;
 
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .modal {
-    color: #000000;
+  color: #000000;
 
-    background-color: #f8f3f0;
-    background-image: url(../img/index/pattern-light.jpg);
-    background-position: 0 0;
-    background-repeat:repeat;
+  background-color: #f8f3f0;
+  background-image: url(../img/pattern-light.jpg);
+  background-position: 0 0;
+  background-repeat:repeat;
+}
+
+modal h2 {
+  font-size: 30px;
+  line-height: 42px;
 }
 
 .login-form input[type="text"],
 .login-form input[type="password"] {
-    font:inherit;
-    color: #000000;
-    text-transform: uppercase;
+  font: inherit;
+  color: #000000;
+  text-transform: uppercase;
 
-    background-color: #f9f6f3;
-    border: 2px solid #000000;
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
 }
 
 .login-form input:focus {
-    border-color: #663d15;
+  border-color: #663d15;
 }
 
 .login-checkbox:hover,
 .login-checkbox:focus {
-    color: #663d15;
+  color: #663d15;
 }
 
 .restore {
-    color: #000000;
-    text-decoration: underline;
+  color: #000000;
+  text-decoration: underline;
 }
 
 .restore:hover,
 .restore:focus {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* catalog.html */
@@ -535,15 +545,15 @@ a {
 }
 
 .breadcrumbs {
-  list-style: none;
   margin: 0;
   margin-bottom: 60px;
   padding: 0;
+  list-style: none;
 }
 
 .breadcrumbs li {
-  display: inline-block;
   position: relative;
+  display: inline-block;
   padding-left: 25px;
   padding-right: 15px;
 }
@@ -557,12 +567,13 @@ a {
 }
 
 .breadcrumbs li:not(:first-child)::before {
-  content: "";
-  width: 10px;
-  height: 10px;
   position: absolute;
   top: 25%;
   left: 0;
+  content: "";
+  width: 10px;
+  height: 10px;
+
   background-color: #000000;
   transform: rotate(45deg);
 }
@@ -586,49 +597,49 @@ a {
 }
 
 .filter fieldset {
-  border: none;
   margin: 0;
   padding: 0;
   padding-bottom: 50px;
+  border: none;
 }
 
 .filter legend {
+  padding-bottom: 30px;
   font-size: 24px;
   line-height: 30px;
-  padding-bottom: 30px;
 }
 
 .filter ul {
-  list-style: none;
-  line-height: 18px;
   margin: 0;
   padding: 0;
+  line-height: 18px;
+  list-style: none;
 }
 
 .filter-option {
-  padding-bottom: 25px;
-
-  display: block;
   position: relative;
+  display: block;
   padding-left: 43px;
+  padding-bottom: 25px;
   cursor: pointer;
 }
 
 .filter-input {
   position: absolute;
-   width: 0;
+  width: 0;
   height: 0;
   opacity: 0;
   cursor: pointer;
 }
 
 .filter-input-checkbox + label::before {
-  content: "";
   position: absolute;
+  content: "";
   top: 0;
   left: 0;
   width: 20px;
   height: 20px;
+
   background-color: #f9f6f3;
   border: 2px solid #000000;
   box-sizing: border-box;
@@ -636,24 +647,26 @@ a {
 }
 
 .filter-input-checkbox:checked + label::after {
-  content: "";
   position: absolute;
+  content: "";
   top: 0;
   left: 0;
   width: 20px;
   height: 20px;
+
   background-image: url("../img/cross.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .filter-input-radio + label::before {
-  content: "";
   position: absolute;
+  content: "";
   top: 0;
   left: 0;
   width: 20px;
   height: 20px;
+
   background-color: #f9f6f3;
   border: 2px solid #000000;
   border-radius: 50%;
@@ -662,12 +675,13 @@ a {
 }
 
 .filter-input-radio:checked + label::after {
-  content: "";
   position: absolute;
+  content: "";
   top: 6px;
   left: 6px;
   width: 1px;
   height: 1px;
+
   border: 4px solid #000000;
   border-radius: 50%;
   box-sizing: border-box;
@@ -692,14 +706,15 @@ a {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-gap: 20px;
-  list-style: none;
   margin: 0;
-  padding: 0;
   margin-bottom: 45px;
+  padding: 0;
+  list-style: none;
 }
 
 .catalog-item {
   position: relative;
+
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -716,11 +731,11 @@ a {
   position: absolute;
   top: 180px;
   left: 0;
-  font-size: 14px;
-  line-height: 18px;
   margin: 0;
   padding-left: 16px;
   padding-right: 17px;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .catalog-category {
@@ -742,11 +757,11 @@ a {
 }
 
 .catalog-item-price {
+  display: flex;
   margin: 0;
   padding-left: 16px;
   padding-right: 17px;
   padding-bottom: 16px;
-  display: flex;
 }
 
 .catalog-item-price b {
@@ -754,6 +769,7 @@ a {
   width: 56%;
   text-align: center;
   line-height: 43px;
+
   color: #000000;
   background-color: #e5e5e5;
   border: none;
@@ -765,12 +781,11 @@ a {
 }
 
 /* pagination */
-
 .pagination-list {
   display: flex;
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .pagination-item {
@@ -832,9 +847,9 @@ a {
 .product-photo-preview {
   display: flex;
   justify-content: space-between;
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .product-photo-preview li {
@@ -906,8 +921,8 @@ a {
 }
 
 .product-info li::before {
-  content: "";
   position: absolute;
+  content: "";
   top: 50%;
   left: 0;
   width: 11px;
@@ -919,15 +934,15 @@ a {
 /* price.html */
 .price-heading {
   position: relative;
-  font-size: 48px;
   margin: 0;
   margin-bottom: 75px;
+  font-size: 48px;
   text-align: center;
 }
 
 .price-heading::before {
-  content: "";
   position: absolute;
+  content: "";
   top: 50%;
   left: 0;
   width: 160px;
@@ -937,8 +952,8 @@ a {
 }
 
 .price-heading::after {
-  content: "";
   position: absolute;
+  content: "";
   top: 50%;
   right: 0;
   width: 160px;
@@ -948,7 +963,7 @@ a {
 }
 
 .price-columns {
-  padding-bottom: 69px;
+  padding-bottom: 70px;
 }
 
 .care-products {
@@ -973,8 +988,8 @@ a {
 
 .care-products li {
   position: relative;
-  list-style: none;
   padding-left: 20px;
+  list-style: none;
 }
 
 .care-products li:not(:last-of-type) {
@@ -982,14 +997,15 @@ a {
 }
 
 .care-products li::before {
-  content: "";
   position: absolute;
+  content: "";
   top: 50%;
   left: 0;
   width: 10px;
   height: 10px;
-  background-color: #000000;
   transform: translateY(-50%) rotate(45deg);
+
+  background-color: #000000;
 }
 
 .service-price {
@@ -1010,8 +1026,8 @@ a {
 
 .service-item {
   width: 50%;
-  text-align: left;
   padding-left: 17px;
+  text-align: left;
 }
 
 .service-item-price {
