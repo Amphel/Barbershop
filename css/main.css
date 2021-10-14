@@ -379,8 +379,8 @@ a {
 .appointment-item input:focus {
   border-color: #663d15;
 }
-
-.main-footer {
+/* footer */
+/* .main-footer {
   padding-top: 60px;
   padding-bottom: 40px;
   color: #ffffff;
@@ -491,6 +491,121 @@ a {
   color: #000000;
 
   background-color: #ffffff;
+} */
+
+.main-footer {
+  background-color: #232323;
+  background-image: url(../img/index/pattern-dark.jpg);
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.main-footer .container {
+  /* display: flex;
+  justify-content: space-between;
+  align-content: center; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  padding-top: 60px;
+  padding-bottom: 40px;
+  color: #ffffff;
+}
+
+.main-footer-shadow {
+  box-shadow: inset 0px 40px 40px 0px rgba(0, 0, 0, 0.5);
+}
+
+.footer-contacts,
+.footer-copyright {
+  margin: 0;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0;
+}
+
+.footer-contacts a {
+  display: contents;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  text-decoration: none;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social b {
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+.footer-social ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.footer-social li {
+  display: flex;
+  list-style: none;
+}
+
+.footer-social li:not(:last-of-type) {
+  padding-right: 6px;
+}
+
+.social-button {
+  display: inline-block;
+  width: 43px;
+  height: 43px;;
+  font-size: 0;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-color: #000000;
+  background-position: center center;
+  border: none;
+}
+
+.social-button:hover,
+.social-button:focus,
+.social-button:active {
+  background-color: #663d15;
+}
+
+.social-btn-vk {
+  background-image: url("../img/vk.svg");
+}
+
+.social-btn-f {
+  background-image: url("../img/facebook.svg");
+}
+
+.social-btn-in {
+  background-image: url("../img/instagram.svg");
+}
+
+.footer-copyright {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 140px;
+  margin-left: auto;
+}
+
+.footer-copyright b {
+  display: inline-block;
+  padding-bottom: 20px;
 }
 
 .modal {
@@ -1060,4 +1175,3 @@ modal h2 {
 .barbershop-description p:last-of-type {
   width: 380px;
 }
-
