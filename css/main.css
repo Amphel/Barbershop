@@ -500,11 +500,7 @@ a {
   cursor: pointer;
 }
 
-.filter-input {
-  position: absolute;
-  width: 0;
-  height: 0;
-  opacity: 0;
+.filter-option label {
   cursor: pointer;
 }
 
