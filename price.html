@@ -29,7 +29,8 @@
       </ul>
     </nav>
   </header>
-  <main class="container container-main">
+
+  <!-- <main class="container container-main">
       <h1 class="page-title">Прайс-лист</h1>
 
       <ul class="breadcrumbs">
@@ -70,7 +71,60 @@
           <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
           <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
       </section>
+  </main> -->
+
+  <main class="container container-main">
+    <h1 class="page-title">Прайс-лист</h1>
+
+    <ul class="breadcrumbs">
+        <li><a href="index.html">Главная</a></li>
+        <li class="breadcrumbs-current">Прайс-лист</li>
+    </ul>
+
+    <section class="inner-content">
+      <h2 class="big-heading">Истинно мужская классика</h2>
+
+      <div class="inner-columns">
+        <div class="inner-column-left">
+          <h2>Мы используем только<br> лучшие средства:</h2>
+          <ul class="custom-list-1">
+            <li>Baxter of California</li>
+            <li>Mr Natty</li>
+            <li>Suavecito</li>
+            <li>Malin+Goetz</li>
+          </ul>
+        </div>
+        <div class="inner-column-right">
+          <h2>Цены на услуги<br> наших мастеров:</h3>
+            <table class="custom-table-1">
+              <tr>
+                <td class="service-item">Стрижка</td>
+                <td class="service-item-price">1 500 ₽</td>
+              </tr>
+              <tr>
+                <td class="service-item">Стрижка бороды</td>
+                <td class="service-item-price">500 ₽</td>
+              </tr>
+              <tr>
+                <td class="service-item">Накрутка усов</td>
+                <td class="service-item-price">350 ₽</td>
+              </tr>
+            </table>
+        </div>
+      </div>
+      <div class="inner-columns">
+        <h2>Несколько слов о нас:</h2>
+        <div class="inner-column-left">
+          <p class="short-text">Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+        </div>
+        <div class="inner-column-right">
+          <p class="short-text">Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+        </div>
+      </div>
+
+    </section>
   </main>
+
   <footer class="main-footer">
     <div class="container">
       <p class="footer-contacts">
@@ -98,30 +152,32 @@
     </div>
   </footer>
 
-  <section class="modal visually-hidden">
-    <div class="modal-login overlay" id="popup-login">
-      <h2>Личный кабинет</h2>
-      <p>Введите пожалуйста свой логин и пароль.</p>
-      <form class="login-form" method="POST" action="https://echo.htmlacademy.ru">
-        <p>
-          <label class="visually-hidden" for="user-login">Логин</label>
-          <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
-        </p>
-        <p>
-          <label class="visually-hidden" for="user-password">Пароль</label>
-          <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
-        </p>
-        <div class="login-password-info">
-          <label class="login-checkbox">Запомните меня
-            <input class="visually-hidden" type="checkbox" name="remember" checked>
-            <span class="checkbox-indicator"></span>
-          </label>
-          <a class="restore" href="#">Я забыл пароль!</a>
-        </div>
-        <button class="button login-form-button" type="submit">Войти</button>
-      </form>    
-    </div>
-    <button class="modal-close" type="button">&times;</button>
+  <section class="modal modal-login">
+    <h2>Личный кабинет</h2>
+    <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label class="visually-hidden" for="user-login">Логин</label>
+        <i class="login-icon-user"></i>
+        <input id="user-login" type="text" name="login" placeholder="Логин">
+      </p>
+      <p>
+        <label class="visually-hidden" for="user-password">Пароль</label>
+        <i class="login-icon-password"></i>
+        <input id="user-password" type="password" name="password" placeholder="Пароль">
+      </p>
+      <p class="login-help">
+        <label class="login-checkbox">
+          <input type="checkbox" name="remember" class="visually-hidden">
+          <span class="checkbox-indicator"></span>
+          Запомните меня
+        </label>
+        <a class="restore" href="#">Я забыл пароль!</a>
+      </p>
+        <button class="button" type="submit">Войти</button>
+    </form>
+    <button class="modal-close-btn" type="button">Закрыть</button>
   </section>
+  <!-- <div class="modal-overlay"></div> -->
 </body>
 </html>

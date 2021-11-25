@@ -1,0 +1,26 @@
+{
+  "name": "barbershop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amphel/Barbershop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Amphel/Barbershop/issues"
+  },
+  "homepage": "https://github.com/Amphel/Barbershop#readme",
+  "devDependencies": {
+    "@linthtml/linthtml": "^0.8.0",
+    "linthtml-config-htmlacademy": "^1.0.3"
+  },
+  "linthtml": {
+    "extends": "linthtml-config-htmlacademy"
+  }
+}
