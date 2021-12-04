@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postcss": "npx postcss src/**/*.css --use autoprefixer -d build/css/ --no-map",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,9 +19,12 @@
   "homepage": "https://github.com/Amphel/Barbershop#readme",
   "devDependencies": {
     "@linthtml/linthtml": "^0.8.0",
-    "linthtml-config-htmlacademy": "^1.0.3"
-  },
-  "linthtml": {
-    "extends": "linthtml-config-htmlacademy"
+    "autoprefixer": "^10.4.0",
+    "linthtml-config-htmlacademy": "^1.0.3",
+    "postcss-cli": "^9.0.2",
+    "stylelint": "^14.1.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^24.0.0",
+    "stylelint-order": "^5.0.0"
   }
 }
