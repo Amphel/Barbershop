@@ -4,27 +4,30 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postcss": "npx postcss src/**/*.css --use autoprefixer -d build/css/ --no-map",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Amphel/Barbershop.git"
   },
-  "author": "",
+  "author": "Amphel",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Amphel/Barbershop/issues"
   },
   "homepage": "https://github.com/Amphel/Barbershop#readme",
   "devDependencies": {
-    "@linthtml/linthtml": "^0.8.0",
+    "@linthtml/linthtml": "^0.8.2",
     "autoprefixer": "^10.4.0",
-    "linthtml-config-htmlacademy": "^1.0.3",
-    "postcss-cli": "^9.0.2",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.44.0",
     "stylelint": "^14.1.0",
-    "stylelint-config-rational-order": "^0.1.2",
-    "stylelint-config-standard": "^24.0.0",
     "stylelint-order": "^5.0.0"
   }
 }
