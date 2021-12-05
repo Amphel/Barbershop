@@ -28,9 +28,9 @@ function setPrefixCss() {
       autoprefixer()
   ];
   return gulp.src('./dist/css/*.css')
-    .pipe( sourcemaps.init() )
+    .pipe(sourcemaps.init())
     .pipe(postcss(plugins))
-    .pipe( sourcemaps.write('./') )
+    .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./dist/css'));
 };
 
@@ -43,16 +43,17 @@ function replaceFile() {
 // minify css
 function minifyCss() {
   return gulp.src('dist/css/*.css')
-    .pipe( sourcemaps.init() )
+    .pipe(sourcemaps.init())
     .pipe(cssmin())
     .pipe(rename({suffix: '.min'}))
-    .pipe( sourcemaps.write('./') )
+    .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./dist/css'));
 };
 
-exports.default = gulp.series(cleanFolder,
-                              modifyScssToCss,setPrefixCss,
-                              replaceFile,
-                              minifyCss
-                              );
+exports.default = gulp.series(
+  cleanFolder,
+  modifyScssToCss,setPrefixCss,
+  replaceFile,
+  minifyCss
+);
 
