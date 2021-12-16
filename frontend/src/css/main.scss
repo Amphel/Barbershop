@@ -409,6 +409,10 @@ input[type="radio"].visually-hidden {
 
   background-color: $color-background-border;
 
+  & a:not(:first-child) {
+    display: none;
+  }
+
   & img {
     width: 286px;
     height: 164px;

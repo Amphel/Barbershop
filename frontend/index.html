@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/normalize.css">
     <link rel="stylesheet" href="dist/css/main.css">
-    <script defer src="js/main.js"></script>
+    <script defer src="src/js/main.js"></script>
   </head>
   <body>
     <header class="main-header">
@@ -27,7 +27,7 @@
             </ul>
             <ul class="user-navigation">
               <li>
-                <a class="login-link" href="#popup-login">Вход</a>
+                <a class="login-link" href="#popup-login" onclick="showModal('.modal-login'); return false;">Вход</a>
               </li>
             </ul>
           </div>
@@ -80,10 +80,16 @@
                 <a href="#">
                   <img src="img/gallery-photo.jpg" width="286" height="164" alt="Интерьер">
                 </a>
+                <a href="#">
+                  <img src="img/catalog-item-1.jpg" width="286" height="164" alt="Интерьер">
+                </a>
+                <a href="#">
+                  <img src="img/catalog-item-2.jpg" width="286" height="164" alt="Интерьер">
+                </a>
                 <figcaption class="visually-hidden">Интерьер салона</figcaption>
               </figure>
-              <button class="button gallery-button gallery-button-back" disabled>Назад</button>
-              <button class="button gallery-button gallery-button-next">Вперед</button>
+              <button class="button gallery-button gallery-button-back" onclick="swipePhoto(-1)" disabled>Назад</button>
+              <button class="button gallery-button gallery-button-next" onclick="swipePhoto(1)">Вперед</button>
             </div>
           </section>
         </div>
@@ -98,7 +104,7 @@
               пн—пт: с 10:00 до 22:00<br>
               сб—вс: с 10:00 до 19:00
             </p>
-            <a class="button" href="map.html">Как проехать</a>
+            <a class="button" href="map.html" onclick="showModal('.modal-map'); return false;">Как проехать</a>
             <a class="button" href="contacts.html">Обратная связь</a>
           </section>
           <section class="appointment">
@@ -124,7 +130,7 @@
                   type="tel"
                   name="phone"
                   value=""
-                  pattern="+7 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}"
+                  pattern="/+7[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}"
                   placeholder="+7 999 999 99 99"
                   required
                   >
@@ -140,7 +146,7 @@
         <p class="footer-contacts">
           Барбершоп «Бородинский»<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-          <a href="map.html">Как нас найти?</a><br>
+          <a href="map.html" onclick="showModal('.modal-map'); return false;">Как нас найти?</a><br>
           Телефон: +7 (812) 666-02-66
         </p>
         <div class="footer-social">
@@ -202,14 +208,14 @@
         </p>
         <button class="button" type="submit">Войти</button>
       </form>
-      <button class="modal-close-btn" type="button">Закрыть</button>
+      <button class="modal-close-btn" type="button" onclick="closeModal('.modal-login');">Закрыть</button>
     </section>
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <p>
         <img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
       </p>
-      <button class="modal-close-btn" type="button">Закрыть</button>
+      <button class="modal-close-btn" type="button" onclick="closeModal('.modal-map');">Закрыть</button>
     </section>
     <!-- <div class="modal-overlay"></div> -->
   </body>

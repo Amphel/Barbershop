@@ -24,7 +24,7 @@
         </ul>
         <ul class="user-navigation">
           <li>
-            <a class="login-link" href="#popup-login">Вход</a>
+            <a class="login-link" href="#popup-login" onclick="showLogin(); return false;">Вход</a>
           </li>
         </ul>
       </nav>
@@ -255,7 +255,7 @@
         <p class="footer-contacts">
           Барбершоп «Бородинский»<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-          <a href="map.html">Как нас найти?</a><br>
+          <a href="map.html" onclick="showMap(); return false;">Как нас найти?</a><br>
           Телефон: +7 (812) 666-02-66
         </p>
         <div class="footer-social">
@@ -312,7 +312,7 @@
         </p>
         <button class="button" type="submit">Войти</button>
       </form>
-      <button class="modal-close-btn" type="button">Закрыть</button>
+      <button class="modal-close-btn" type="button" onclick="closeLogin()">Закрыть</button>
     </section>
     <!-- <div class="modal-overlay"></div> -->
 
