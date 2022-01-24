@@ -1,15 +1,29 @@
 version: "3.9"
 
 services:
+  backend:
+    build: ./backend
+    networks:
+      - backend
+      - frontend
+    volumes:
+      # Only for development
+      - ./backend:/app
+    command: ["node_modules/.bin/nodemon", "./server.js"]
+    ports:
+      - "3000:3000"
+    depends_on:
+      - postgresdb
 
   postgresdb:
     image: postgres:14.1
     restart: always
     environment:
-      POSTGRES_PASSWORD: postgres
+      - POSTGRES_PASSWORD=postgres
     ports:
       - "5432:5432"
     volumes:
+      - ./configs/postgresql-init/:/docker-entrypoint-initdb.d/:ro
       - postgresdb-data:/var/lib/postgresql/data
     networks:
       - backend

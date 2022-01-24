@@ -1,0 +1,22 @@
+{
+  "localhost": {
+    "username": "barber",
+    "password": "barbershop",
+    "database": "barbershop_db",
+    "host": "localhost",
+    "dialect": "postgres",
+    "port": "5432",
+    "seederStorage": "sequelize",
+    "seederStorageTableName": "SequelizeSeed"
+  },
+  "development": {
+    "username": "barber",
+    "password": "barbershop",
+    "database": "barbershop_db",
+    "host": "postgresdb",
+    "dialect": "postgres",
+    "port": "5432",
+    "seederStorage": "sequelize",
+    "seederStorageTableName": "SequelizeSeed"
+  }
+}
